@@ -15,14 +15,9 @@ import UseNetwork from '../components/useEffect/UseNetwork';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <UseInput />
-    <UseState />
-    <UseTabs /> */}
-
-    <UseEffect />
-    <UseTitle />
-    <UseClick />
-    <UseNetwork />
+    <div>
+      hello
+    </div>
   </React.StrictMode>
 );
 

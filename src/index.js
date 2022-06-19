@@ -3,22 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Counter from '../components/counter/counter';
-
-// React 요소 이런식으로도 가능하구나 react
-// const app = React.createElement(
-//   'div', 
-//   { className: 'app' }, 
-//   'React App 매뉴얼 구성'
-// );
+import UseState from '../components/useState/UseState';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      <App />
-      <Counter />
+      <UseState />
     </>
   </React.StrictMode>
 );

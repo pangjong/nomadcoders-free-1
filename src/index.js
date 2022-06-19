@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UseState from '../components/useState/UseState';
 import UseInput from '../components/useState/UseInput';
+import UseTabs from '../components/useState/UseTabs';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      
+      <UseState />
       <UseInput />
+      <UseTabs />
     </>
   </React.StrictMode>
 );

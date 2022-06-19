@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import UseState from '../components/useState/UseState';
 import UseInput from '../components/useState/UseInput';
 import UseTabs from '../components/useState/UseTabs';
-import UseEffect from '../components/useEffect/useEffect';
+import UseEffect from '../components/useEffect/UseEffect';
+import UseTitle from '../components/useEffect/UseTitle';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <UseInput />
+    <UseState />
+    <UseTabs /> */}
+
     <UseEffect />
+    <UseTitle />
   </React.StrictMode>
 );
 

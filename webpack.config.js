@@ -32,7 +32,7 @@ module.exports = (_env, argv) => {
       devMiddleware: {
         // dist 디렉토리에 실제 파일 생성
         writeToDisk: true,
-        publicPath: '/public'
+        publicPath: '/dist'
       },
       // History 라우팅 대체 사용 설정
       historyApiFallback: true,
@@ -54,7 +54,7 @@ module.exports = (_env, argv) => {
       publicPath: '/',
     },
     mode: 'development',
-    devtool: isDev && 'cheap-module-source-map',
+    devtool: isDev && 'eval-cheap-module-source-map',
 
     // React 앱 배포(production) 시 성능을 향상 시키는 prop-types 제거, React.createElement 컴파일 결과 인라인 처리, 정적 React 요소를 상수로 출력하는 플러그인 등을 설치합니다.
     // @React 최적화 플러그인 configuration has an unknown property 'env' 이슈로 주석 22.06.16

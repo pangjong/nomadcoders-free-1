@@ -9,6 +9,7 @@ import UseTabs from '../components/useState/UseTabs';
 import UseEffect from '../components/useEffect/UseEffect';
 import UseTitle from '../components/useEffect/UseTitle';
 import UseClick from '../components/useEffect/UseClick';
+import UseNetwork from '../components/useEffect/UseNetwork';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
     <UseEffect />
     <UseTitle />
     <UseClick />
+    <UseNetwork />
   </React.StrictMode>
 );
 

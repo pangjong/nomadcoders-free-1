@@ -4,13 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UseState from '../components/useState/UseState';
+import UseInput from '../components/useState/UseInput';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      <UseState />
+      
+      <UseInput />
     </>
   </React.StrictMode>
 );

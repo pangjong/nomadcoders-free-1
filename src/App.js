@@ -13,12 +13,8 @@ import Home from './Home';
 // 좀더 연구필요
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="useState" element={<useState />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <>
+    </>
   );
 }
 

@@ -7,7 +7,10 @@ const os = require('os')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const InterpolateHtmlPlugin = require('interpolate-html-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const { JavascriptModulesPlugin } = require("webpack");
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = (_env, argv) => {
   const isProd = argv.mode === 'production'
@@ -75,6 +78,10 @@ module.exports = (_env, argv) => {
       // 환경 변수 플러그인 인스턴스 생성 npm i cross-env 설치
       new webpack.EnvironmentPlugin({
         NODE_ENV: isDev ? 'development' : 'production'
+      }),
+      new webpack.DefinePlugin({
+        // process: {env: {}}
+        "process.env": JSON.stringify(process.env),
       }),
 
       // 플러그인 인스턴스 생성

@@ -3,14 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import UseState from '../components/useState/UseState';
-import UseInput from '../components/useState/UseInput';
-import UseTabs from '../components/useState/UseTabs';
-import UseEffect from '../components/useEffect/UseEffect';
-import UseTitle from '../components/useEffect/UseTitle';
-import UseClick from '../components/useEffect/UseClick';
-import UseNetwork from '../components/useEffect/UseNetwork';
-
+import firebaseApp from './firebaseApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

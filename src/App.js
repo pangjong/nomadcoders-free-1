@@ -7,14 +7,13 @@ import {
   Route,
   Outlet
 } from 'react-router-dom';
-import Home from './Home';
+import AppRouter from '../components/twitterCloneCoding/components/AppRouter';
 
 
 // 좀더 연구필요
 function App() {
   return (
-    <>
-    </>
+    <AppRouter />
   );
 }
 
